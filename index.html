@@ -1,0 +1,145 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexey Teverovski | Cybersecurity Analyst</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Alexey Teverovski</h1>
+    <p>Cybersecurity Analyst | Computer Science Student</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tryhackme">TryHackMe</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a Cybersecurity Analyst with hands-on SOC experience and a Computer Science student at Ashkelon Academic College. I am passionate about security operations, incident response, and vulnerability research. Currently working at TripleCyber and progressing through the DevSecOps path on TryHackMe.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>PyPi Package Scraper</h3>
+            <p>A Python tool to retrieve, download, and analyze dependencies from PyPI packages.</p>
+            <a href="https://github.com/AlexeyTev/PyPi-Package-Scraper" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="card">
+            <h3>Pokemon Battle Simulation</h3>
+            <p>Java turn-based game simulating battles between Fire and Electric type Pokémon using OOP principles.</p>
+            <a href="https://github.com/AlexeyTev/Pokemon" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="card">
+            <h3>Football League Simulator</h3>
+            <p>Java multithreaded football league simulation focusing on concurrency and declarative programming.</p>
+            <a href="https://github.com/AlexeyTev/FootballLeagueSimulator" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="card">
+            <h3>Titanic Passenger Data Analysis</h3>
+            <p>Java application analyzing Titanic passenger data from CSV files with filtering and statistics.</p>
+            <a href="https://github.com/AlexeyTev/TitanicProject" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
+<section id="tryhackme">
+    <h2>TryHackMe Achievements</h2>
+
+    <div class="thm-card-container">
+
+        <div class="thm-card">
+            <h3>Profile</h3>
+
+            <div class="badge-frame">
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3216761" style="border:none; width:100%; height:200px;"></iframe>
+            </div>
+            <a href="https://tryhackme.com/p/Alextev" target="_blank" rel="noopener noreferrer" class="btn">Visit My TryHackMe Profile</a>
+        </div>
+
+        <div class="thm-card">
+            <h3>Cybersecurity 101 Certification</h3>
+            <img src="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PTLRQM6JSC.png" alt="Cybersecurity 101 Certificate" class="cert-img">
+            <a href="https://tryhackme.com/certificate/THM-PTLRQM6JSC" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+        </div>
+
+        <div class="thm-card">
+            <h3>Pre-Security Certification</h3>
+            <img src="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZD2IC1GVPA.png" alt="Pre-Security Certificate" class="cert-img">
+            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZD2IC1GVPA.png" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="feel-free">Feel free to reach out or request my CV!</p>
+
+    <div class="form-card">
+        <form id="cvRequestForm" action="https://formspree.io/f/mvgkvqvy" method="POST" onsubmit="return validateForm(event)">
+
+            <label for="name">Your Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required maxlength="100" autocomplete="off">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your work email" required maxlength="100" autocomplete="off">
+
+            <label for="messageText">Your Message (Optional):</label>
+            <textarea id="messageText" name="messageText" rows="4" placeholder="Write a short message (max 300 characters)" maxlength="300"></textarea>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="gradesheet" name="gradesheet">
+                <label for="gradesheet" class="checkbox-label">Also request my gradesheet</label>
+            </div>
+
+            <!-- Hidden message field -->
+            <input type="hidden" id="message" name="message">
+
+            <button type="submit" class="btn">Request My CV</button>
+        </form>
+    </div>
+
+    <div class="social-icons">
+        <a href="mailto:Alextev3@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/alexey-teverovski" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/AlexeyTev" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2025 Alexey Teverovski. All rights reserved.
+</footer>
+<small style="display:none;">Backup contact: alextev3@gmail.com</small>
+
+
+</body>
+</html>
