@@ -1,7 +1,6 @@
 function validateForm(event) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
-    const gradesheetRequested = document.getElementById('gradesheet').checked;
     const messageText = document.getElementById('messageText').value.trim();
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|net|org|co|edu|gov)$/;
@@ -34,12 +33,6 @@ function validateForm(event) {
     const linkedInLink = `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(name)}`;
 
     let message = `${name} wants to see your CV.\nEmail: ${email}\nLinkedIn search: ${linkedInLink}`;
-
-    if (gradesheetRequested) {
-        message += `\nRequested Gradesheet: YES`;
-    } else {
-        message += `\nRequested Gradesheet: NO`;
-    }
 
     if (messageText) {
         message += `\nMessage: ${messageText}`;
