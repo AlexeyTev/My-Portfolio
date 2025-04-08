@@ -1,3 +1,4 @@
+// Form validation
 function validateForm(event) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -23,7 +24,6 @@ function validateForm(event) {
         return false;
     }
 
-    // Very basic injection prevention (block <script> or <>
     if (/[<>]/.test(messageText)) {
         alert('Invalid characters detected in the message.');
         event.preventDefault();
@@ -44,7 +44,7 @@ function validateForm(event) {
     return true;
 }
 
-
+// Success popup after form submit
 function showSuccessPopup() {
     const popup = document.createElement('div');
     popup.className = 'success-popup';
@@ -53,9 +53,10 @@ function showSuccessPopup() {
 
     setTimeout(() => {
         popup.remove();
-    }, 4000); // Popup disappears after 4 seconds
+    }, 4000);
 }
 
+// Fade-in animation for sections
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
 
